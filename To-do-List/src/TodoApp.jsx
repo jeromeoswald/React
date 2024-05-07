@@ -38,6 +38,11 @@ function TodoApp() {
 
         setTodos(updatedTodos);
     }
+    
+    const handleEdit = (index) => {
+        setNewTodo(todos[index]);
+        setEditIndex(index);
+      };
 
     const filteredTodes=todos.filter(todo => {
         if(filter ==='all'){
@@ -77,6 +82,7 @@ function TodoApp() {
                                     {todo.status === 'completed' ? 'Mark Incomplete' : 'Mark Complete'}
                                 </button>
                                 <button className='btn btn-danger' onClick={() => handleDeleteTodo(index)}>Delete</button>
+                                <button className='btn btn-success' onClick={() => handleEdit(index)}>Edit</button>
                    </div>
                 </div>
             </div>
