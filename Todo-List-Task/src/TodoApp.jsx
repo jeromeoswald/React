@@ -77,7 +77,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1 className="mt-4">My Todo</h1>
+      <h1 className="mt-4"><center>My Todo</center></h1>
       <div className="row">
         <div className="col-md-12">
           <input
