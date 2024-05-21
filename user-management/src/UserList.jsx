@@ -68,7 +68,7 @@ function UserList() {
     return (
         <Container>
             <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
-                <Typography variant='h4' gutterBottom>User Management</Typography>
+                <Typography variant='h4' gutterBottom>User Management using Axios</Typography>
                 <Grid container spacing={3}>
                     {users.map((user) => (
                         <UserItem
