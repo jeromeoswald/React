@@ -6,7 +6,7 @@ const bodyParser = require ("body-parser");
 const fs = require ("fs-extra");
 // to manage file & directory paths
 const path = require ("path");
-const { log } = require("console");
+// const { log } = require("console");
 
 const app = express();
 const PORT = 3000;
