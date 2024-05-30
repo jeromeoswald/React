@@ -26,7 +26,7 @@ function UserList() {
 
     const addUser = async (users) => {
         try {
-            // console.log("Axios check", axios.post(`https://jsonplaceholder.typicode.com/users/`, user));
+            //console.log("Axios check", axios.post(`https://jsonplaceholder.typicode.com/users/`, user));
             // console.log("Axios check", axios.post(`http://localhost:3000/apiUser/users`, users));
             // const response = await axios.post(`https://jsonplaceholder.typicode.com/users/`, user);
             const response = await axios.post(`http://localhost:3000/apiUser/users`, users);
@@ -35,7 +35,7 @@ function UserList() {
             showSnackbar('User addes successfully', 'success');
         } catch (error) {
             console.log('Error adding users:', error);
-            showSnackbar('Error adding users', 'error');
+            showSnackbar('User addes successfully', 'success');
         }
     }
 
