@@ -63,7 +63,7 @@ export const InputForm = () => {
 
     return (
         <Box
-            width={ "40%" }
+            width={ "80%" }
             margin={ "auto" }
             boxShadow="dark-lg"
             p="6"
@@ -93,7 +93,7 @@ export const InputForm = () => {
                     type="text"
                     value={ input.urlCode }
                     onChange={ handleInputChange }
-                    w='50%'
+                    w='70%'
                     onKeyDown={ handleEnter }
                 />
             </InputGroup>
